@@ -1,3 +1,4 @@
+--
 theme: minima
 title: The land of nowhere
 author: chuadoNeblod
@@ -10,3 +11,4 @@ twitter_username: drago_guitar # DO NOT include the @ character, or else the bui
 github_username:  ChuadoNeblod # DO NOT include the @ character, or else the build will fail!
 
 show_excerpts: true # set to false to remove excerpts on the homepage
+--
