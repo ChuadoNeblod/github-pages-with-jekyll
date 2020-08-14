@@ -1,8 +1,10 @@
 @charset "utf-8";
 /* CSS Document */
-:root {
+
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Hind+Madurai:wght@300&family=Roboto:wght@700&display=swap');
+:root{
 	font-size: 14px;
-	font-family: Impact, Haettenschweiler, Franklin Gothic Bold, Arial Black," sans-serif";
+	font-family: 'Hind Madurai', sans-serif;
 }
 
 body{
@@ -11,13 +13,23 @@ body{
 	padding: 0;
 	color: black;
 	width: 100%;
+
+	background-color: #ffffff;
+	background-image: url(../img/always-grey-1920x1080.png);
+
 }
 
 .index{
 		background-color: rgba(225,225,225,1 );
 }
 
+h1{
+	font-family: 'Alata', sans-serif;
+}
 
+h2{
+	font-family: 'Roboto', sans-serif;
+}
 
 /*Scrollbar//////////////////////////////////////////////////////////////*/
 body::-webkit-scrollbar {
@@ -51,7 +63,7 @@ div.topnav{
 }
 .topnav a{
 	text-decoration: none;
-	color:black;
+	color: rgba(100,100,100,1);
 	padding-top: .2rem;
 	padding-bottom: .2rem;
 	padding-left:.8rem;
@@ -82,6 +94,18 @@ div.topnav{
 	text-shadow: 3px 3px rgba(0,0,0,.4);
 }
 
+a{
+	color: chocolate;
+}
+
+a:visited{
+	color: darkslategray;
+}
+
+a:hover{
+	color: firebrick;
+}
+
 
 
 /*NAV//////////////////////////////////////////////////////////////*/
@@ -89,9 +113,10 @@ div.topnav{
 #navbar{
 	background-color: rgba(200,200,200,.95 );
 	width: 100%;
-	height: 4rem;
+	height: auto;
 	display: block;
 	align-items: center;
+	justify-content: center;
 	position: sticky;
 	top: 0;
 	padding-top: .2rem;
@@ -108,7 +133,7 @@ div.topnav{
 }
 
 .lista {
-    display: block;
+	display: block;
 }
 #navbar li{
     float: left;
@@ -155,10 +180,13 @@ div.topnav{
 	opacity: .5;	
 }
 
+.list-drop ul{
+display: none;
+}
 
-
-
-
+.list-drop:hover ul{
+display: block;
+}
 
 
 
@@ -172,7 +200,7 @@ img{
 #content {    
     max-width: 1180px;
     position: relative;
-    top: 10px;
+    top: 2rem;
 	margin: 0 auto;
 	z-index: -1;
 	text-align: justify;
@@ -186,17 +214,40 @@ img{
 
 
 section{
-	width: 30%;
-	margin: 0px;
+	width: 100%;
+	margin:0;
 	padding: 10px;
 	float: left;
 }
 
+#principal{
+	width: 48%;
+}
+
+#secundario{
+	width: 48%;
+}
+
+
 aside{
-	width: 30%;
+	width: 100%;
 	float: left;
 	margin: 0px;
 	padding: 10px;
+}
+
+.sideimg{
+	float: right;
+
+}
+
+.sideimg img{
+	width: 60%;
+}
+
+
+.sect{
+	width: 100%;
 }
 
 
@@ -234,6 +285,15 @@ footer div{
 		align-items: center;
 	}
 	
+	#principal{
+		width: 95%;
+	}
+
+	#secundario{
+		width: 95%;
+	}
+
+
 	section {
 	  width: 95%;
 	}
@@ -261,6 +321,11 @@ footer div{
 
 	.lista{
 	display: none;
+	}
+
+
+	.drop{
+		background-color: rgba(255,255,255,.9 );
 	}
 
 
@@ -295,7 +360,7 @@ footer div{
 	}
 	
 	.logo img{
-		height: 2.5rem;
+		height: 3rem;
 		width: auto;
 		transition: opacity 200ms ease;
 	
